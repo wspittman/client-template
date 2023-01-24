@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint src --fix",
-    "pret": "prettier --write src"
+    "lint": "eslint src --fix"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -21,10 +20,8 @@
     "@typescript-eslint/parser": "^5.48.1",
     "@vitejs/plugin-react": "^3.0.0",
     "eslint": "^8.31.0",
-    "eslint-config-standard-with-typescript": "^26.0.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0",
-    "eslint-plugin-promise": "^6.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.8.3",
