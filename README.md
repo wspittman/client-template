@@ -8,6 +8,7 @@ High-level steps
 - Add Prettier
 
 TODO
+- See if we missed any good linting rules
 - lint on commit
 - Standard component simplifications built on top of MUI
 - Good icons

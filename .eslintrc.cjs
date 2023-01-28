@@ -12,10 +12,13 @@ module.exports = {
 		'plugin:react/jsx-runtime',
 		'plugin:react-hooks/recommended',
 		'plugin:prettier/recommended',
+		'plugin:import/recommended',
+		'plugin:import/typescript',
 	],
 	rules: {
 		'@typescript-eslint/no-unused-vars': ['error', { 'ignoreRestSiblings': true }],
-		'@typescript-eslint/space-before-function-paren': ['error', 'never']
+		'@typescript-eslint/space-before-function-paren': ['error', 'never'],
+		'import/no-default-export': 'error',
 	},
 	parserOptions: {
 		'project': './tsconfig.json'
@@ -23,6 +26,10 @@ module.exports = {
 	settings: {
 		react: {
 			version: 'detect'
+		},
+	  'import/resolver': {
+			typescript: true,
+			node: true,
 		}
 	}
 };
