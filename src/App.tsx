@@ -2,11 +2,21 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
+import { Selector } from './components/Selector';
 import { Toggle } from './components/Toggle';
+
+const exampleSelections = [
+  { value: '1', text: 'One' },
+  { value: '2', text: 'Two' },
+  { value: '3', text: 'Three' },
+];
 
 export function App(): JSX.Element {
   const [count, setCount] = useState(0);
   const [toggleValue, setToggleValue] = useState(false);
+  const [selectorValue, setSelectorValue] = useState(
+    exampleSelections[0].value
+  );
 
   return (
     <div>
@@ -38,7 +48,15 @@ export function App(): JSX.Element {
         label="Toggle Example"
         tooltip="Toggle tooltip example"
         value={toggleValue}
-        onChange={setToggleValue}
+        setValue={setToggleValue}
+      />
+
+      <Selector
+        label="Selector Example"
+        tooltip="Selector tooltip example"
+        value={selectorValue}
+        setValue={setSelectorValue}
+        options={exampleSelections}
       />
     </div>
   );
