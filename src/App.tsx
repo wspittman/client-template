@@ -1,7 +1,9 @@
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Dayjs } from 'dayjs';
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
+import { DateSelector } from './components/DateSelector';
 import { Selector } from './components/Selector';
 import { Toggle } from './components/Toggle';
 
@@ -16,6 +18,9 @@ export function App(): JSX.Element {
   const [toggleValue, setToggleValue] = useState(false);
   const [selectorValue, setSelectorValue] = useState(
     exampleSelections[0].value
+  );
+  const [dateSelectorValue, setDateSelectorValue] = useState<Dayjs | null>(
+    null
   );
 
   return (
@@ -57,6 +62,13 @@ export function App(): JSX.Element {
         value={selectorValue}
         setValue={setSelectorValue}
         options={exampleSelections}
+      />
+
+      <DateSelector
+        label="Date Selector Example"
+        tooltip="Date Selector tooltip example"
+        value={dateSelectorValue}
+        setValue={setDateSelectorValue}
       />
     </div>
   );
