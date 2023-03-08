@@ -2,9 +2,11 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
+import { Toggle } from './components/Toggle';
 
 export function App(): JSX.Element {
   const [count, setCount] = useState(0);
+  const [toggleValue, setToggleValue] = useState(false);
 
   return (
     <div>
@@ -31,6 +33,13 @@ export function App(): JSX.Element {
         </Typography>
       </div>
       <Typography>Click on the Vite and React logos to learn more</Typography>
+
+      <Toggle
+        label="Toggle Example"
+        tooltip="Toggle tooltip example"
+        value={toggleValue}
+        onChange={setToggleValue}
+      />
     </div>
   );
 }
