@@ -4,6 +4,7 @@ import { Dayjs } from 'dayjs';
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import { DateSelector } from './components/DateSelector';
+import { SearchBar } from './components/SearchBar';
 import { Selector } from './components/Selector';
 import { Toggle } from './components/Toggle';
 
@@ -70,6 +71,8 @@ export function App(): JSX.Element {
         value={dateSelectorValue}
         setValue={setDateSelectorValue}
       />
+
+      <SearchBar placeholder="Search Bar Example" />
     </div>
   );
 }
