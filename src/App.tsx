@@ -1,12 +1,13 @@
+import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Dayjs } from 'dayjs';
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
 import { DateSelector } from './components/DateSelector';
 import { SearchBar } from './components/SearchBar';
 import { Selector } from './components/Selector';
 import { Toggle } from './components/Toggle';
+import { Header } from './frame/Header';
 
 const exampleSelections = [
   { value: '1', text: 'One' },
@@ -25,15 +26,15 @@ export function App(): JSX.Element {
   );
 
   return (
-    <div>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src="/vite.svg" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
-          <img src={reactLogo} alt="React logo" />
-        </a>
-      </div>
+    <Box
+      sx={{
+        width: '100vw',
+        height: '100vh',
+        margin: '-8px',
+      }}
+    >
+      <Header />
+
       <Typography variant="h1">Vite + React</Typography>
       <div>
         <Button
@@ -73,6 +74,6 @@ export function App(): JSX.Element {
       />
 
       <SearchBar placeholder="Search Bar Example" />
-    </div>
+    </Box>
   );
 }

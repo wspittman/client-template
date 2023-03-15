@@ -11,10 +11,10 @@ TODO
 - See if we missed any good linting rules
 - lint on commit
 - Standard component simplifications built on top of MUI
-- Good icons
 - Folder organization
 - State management
 - Example API calls
 - Immer?
 - Jest
 - Apply a top-level ErrorBoundary
+ - Color theme

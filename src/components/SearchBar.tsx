@@ -1,5 +1,5 @@
-import { Input } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
+import Input from '@mui/material/Input';
 import { Search, XCircle } from 'lucide-react';
 import { useState } from 'react';
 
