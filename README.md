@@ -6,6 +6,9 @@ High-level steps
   - `yarn create vite client-template --template react-ts`
 - Add ESLint with Typescript, React, and React-Hooks standards
 - Add Prettier
+- Add MUI and some simplified components
+- Add Lucide icons
+- Create app frame
 
 TODO
 - See if we missed any good linting rules
@@ -17,4 +20,4 @@ TODO
 - Immer?
 - Jest
 - Apply a top-level ErrorBoundary
- - Color theme
+- Color theme
