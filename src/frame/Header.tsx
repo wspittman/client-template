@@ -34,6 +34,7 @@ export const Header = (): JSX.Element => {
           sx={{
             width: 35,
             height: 35,
+            bgcolor: 'secondary.main',
           }}
         >
           <Button
@@ -44,7 +45,7 @@ export const Header = (): JSX.Element => {
             aria-expanded={isOpen ? 'true' : undefined}
             onClick={handleClick}
           >
-            WSP
+            <Typography color="secondary.contrastText">WP</Typography>
           </Button>
         </Avatar>
         <Menu

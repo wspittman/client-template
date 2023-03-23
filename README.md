@@ -20,4 +20,3 @@ TODO
 - Immer?
 - Jest
 - Apply a top-level ErrorBoundary
-- Color theme
