@@ -25,6 +25,10 @@ export function App(): JSX.Element {
     null
   );
 
+  const str = [1];
+  const e = str[-1][1];
+  console.log(e);
+
   return (
     <Box
       sx={{
